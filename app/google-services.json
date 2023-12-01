@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "158622352946",
+    "project_id": "mbpr-f891b",
+    "storage_bucket": "mbpr-f891b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158622352946:android:fa599f8c9c46dfa2219e2b",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOuX8OS7Qzbj6FypYIwd9ZhKiKAO35fCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
