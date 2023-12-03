@@ -1,6 +1,7 @@
 package com.example.mp_pr.login;
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.mp_pr.R
@@ -13,7 +14,7 @@ class LogInActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        //setContentView(R.layout.activity_main)
 
         binding = ActivityLogInBinding.inflate(layoutInflater)
         setContentView(binding.root)

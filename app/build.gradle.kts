@@ -33,9 +33,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    viewBinding {
-        enable = true
-    }
     dataBinding{
         enable = true
     }
@@ -54,6 +51,7 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:4.11.0")
     implementation ("com.sothree.slidinguppanel:library:3.4.0")
     implementation("com.google.firebase:firebase-auth-ktx:22.3.0")
+    implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.19")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.11.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

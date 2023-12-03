@@ -4,6 +4,7 @@ import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.text.SpannableStringBuilder
 import android.util.Log
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class RoadmapDetailActivity : AppCompatActivity() {
 
+    lateinit var roadmap_back: ImageButton
     lateinit var roadmapImage: ImageView
     lateinit var roadmapName: TextView
     lateinit var roadmapNameInfo: TextView
@@ -29,6 +31,12 @@ class RoadmapDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_roadmap_detail)
 
+        roadmap_back = findViewById<ImageButton>(R.id.roadmap_back)
+
+        roadmap_back.setOnClickListener {
+            finish()
+        }
+
         roadmapImage = findViewById<ImageView>(R.id.roadmapImage)
         roadmapName = findViewById<TextView>(R.id.roadmapName)
         roadmapNameInfo = findViewById<TextView>(R.id.roadmapNameInfo)
@@ -37,28 +45,28 @@ class RoadmapDetailActivity : AppCompatActivity() {
         when (str_img) {
             "frontEnd" -> {
                 roadmapImage.setImageResource(R.drawable.rd_front_end)
-                roadmapName.setText("Front-End Developer")
+                roadmapName.setText("프론트엔드 개발자")
                 roadmapNameInfo.setText("1️⃣ 프론트엔드 개발자란?")
 
             }
             "backEnd" -> {
                 roadmapImage.setImageResource(R.drawable.rd_back_end)
-                roadmapName.setText("Back-End Developer")
+                roadmapName.setText("백엔드 개발자")
                 roadmapNameInfo.setText("1️⃣ 백엔드 개발자란?")
             }
             "game" -> {
                 roadmapImage.setImageResource(R.drawable.rd_game)
-                roadmapName.setText("Game Developer")
+                roadmapName.setText("게임 개발자")
                 roadmapNameInfo.setText("1️⃣ 게임 개발자란?")
             }
             "mobile" -> {
                 roadmapImage.setImageResource(R.drawable.rd_mobile)
-                roadmapName.setText("Mobile App Developer")
+                roadmapName.setText("모바일 앱 개발자")
                 roadmapNameInfo.setText("1️⃣ 모바일 앱 개발자란?")
             }
             "dataAnalyst" -> {
                 roadmapImage.setImageResource(R.drawable.rd_data_analyst)
-                roadmapName.setText("Data Analyst")
+                roadmapName.setText("데이터 분석가")
                 roadmapNameInfo.setText("1️⃣ 데이터 분석가란?")
             }
         }

@@ -1,19 +1,14 @@
 package com.example.mp_pr
 
 import android.content.Intent
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.PagerSnapHelper
-import java.io.ByteArrayOutputStream
-import java.io.OutputStream
 
 
 class RoadmapFragment : Fragment() {
@@ -84,12 +79,13 @@ class RoadmapFragment : Fragment() {
 //        return outputStream.toByteArray()
 //    }
 
+
     private fun addDataToList() {
-        mList.add(DataModel("프론트엔드", R.drawable.movie_slide_img1))
-        mList.add(DataModel("백엔드", R.drawable.movie_slide_img2))
-        mList.add(DataModel("게임개발자", R.drawable.movie_slide_img3))
-        mList.add(DataModel("모바일 개발자", R.drawable.movie_slide_img4))
-        mList.add(DataModel("데이터 분석가", R.drawable.movie_slide_img5))
+        mList.add(DataModel("프론트엔드 개발자", "프론트엔드 개발자는 백엔드 API에서 가져온 데이터의 출력, 입력을 통한 비즈니스 로직 구성과 사용자와 대화하는 사용자 인터페이스 부분을 작업하는 개발자를 말합니다.", R.drawable.front_end_cover))
+        mList.add(DataModel("백엔드 개발자", "백엔드 개발은 웹 애플리케이션의 서버 측 구성 요소 생성을 의미합니다. 여기에는 데이터 저장, 처리 및 검색과 서버 측 비즈니스 논리를 처리하는 코드 작성이 포함됩니다. 데이터베이스 및 웹 서버와 함께 작업하여 프론트엔드에서 사용할 수 있는 API를 생성합니다.", R.drawable.back_end_corver))
+        mList.add(DataModel("게임 개발자", "프로그래밍을 통해 맵 디자인, 캐릭터 디자인, 사운드, 각종 시스템 등을 뒤섞어, 게임이라는 하나의 결과물을 만드는 직업입니다.", R.drawable.game_corver))
+        mList.add(DataModel("모바일 앱 개발자", "스마트폰이나 태블릿PC 등 모바일기기에서 사용되는 소프트웨어인 모바일 애플리케이션을 개발하고 수정하는 일을 합니다.", R.drawable.mobile_corver))
+        mList.add(DataModel("데이터 분석가", "데이터 분석가는 조직이 더 나은 비지니스 의사결정을 할 수 있도록 데이터를 사용해 돕는 역할을 합니다. 수많은 데이터를 정리하고, 유용한 정보를 추출하고 데이터 분석에 기초하여 결정을 내려서 인사이트를 도출해 전달합니다.", R.drawable.data_analyst_corver))
     }
 
 
@@ -117,8 +113,7 @@ class RoadmapFragment : Fragment() {
 시장 점유율을 높이기 위해 다양한 운영 체제, 브라우저에서 모두 작동되는 사이트를 만들거나, 각각의 운영체제, 브라우저에 최적화된 웹사이트나 앱을 만듬.
 
 ⦁ 보안에 대한 지원
-보안 기능을 염두하면서 개발 업무를 진행
-""",
+보안 기능을 염두하면서 개발 업무를 진행""",
             """⦁ HTML, CSS, JavaScript 등의 언어를 사용할 수 있어야 함.
                 
 ⦁ 이미지 최적화, 코드 최적화, 캐싱 등의 기술을 사용할 수 있어야 함.
@@ -138,8 +133,7 @@ class RoadmapFragment : Fragment() {
 
 ⦁ 서버 측 애플리케이션을 개발하는 업무 수행 
 
-⦁ 백엔드 개발자의 업무는 조직마다 천차만별이지만 대개는 ❶ 과제 할당 → ❷ 과제 분석 → ❸ 개발 → ➍ 테스트(리뷰) → ➎ QA 및 버그 수정 → ➏ 배포 → ➐ 유지보수 순서로 진행
-""",
+⦁ 백엔드 개발자의 업무는 조직마다 천차만별이지만 대개는 ❶ 과제 할당 → ❷ 과제 분석 → ❸ 개발 → ➍ 테스트(리뷰) → ➎ QA 및 버그 수정 → ➏ 배포 → ➐ 유지보수 순서로 진행""",
             """⦁ 서버에 대한 지식
                 
 ⦁ 프로그래밍 지식
@@ -165,8 +159,7 @@ class RoadmapFragment : Fragment() {
 
 ⦁ 구축: 기본 데이터를 생성하고 필요한 모듈을 프로그램 언어로 구현한 다음 모듈을 통합하여 게임 구축 후 디버깅
 
-⦁ 운영 및 유지 보수: 사용자의 관점과 환경에서 다양한 방법을 사용하여 게임을 테스트하여 에러를 수정하고 버그를 찾아 재개발
-""",
+⦁ 운영 및 유지 보수: 사용자의 관점과 환경에서 다양한 방법을 사용하여 게임을 테스트하여 에러를 수정하고 버그를 찾아 재개발""",
             """⦁ 다양한 프로그래밍 언어의 습득
                 
 ⦁ 자료구조, 알고리즘, 운영체제 등 프로그래머로서의 기본기
@@ -177,8 +170,7 @@ class RoadmapFragment : Fragment() {
 
 ⦁ 이해력, 판단력, 표현력, 심미성 등의 능력
 
-⦁ 게임 개발에 대한 열정
-"""))
+⦁ 게임 개발에 대한 열정"""))
 
         dmList.add(DetailDataModel("mobile",
             "스마트폰이나 태블릿PC 등 모바일기기에서 사용되는 소프트웨어인 모바일 애플리케이션을 개발하고 수정하는 일을 합니다.",
