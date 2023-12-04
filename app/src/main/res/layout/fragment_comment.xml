@@ -22,87 +22,109 @@
             android:layout_height="40dp"
             android:src="@drawable/ic_round_arrow_back"
             android:background="#000000"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="댓글란"
-        android:textSize="25dp"
-        android:layout_weight="1"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="10dp"/>
         </LinearLayout>
 
-    <EditText
-        android:id="@+id/edit1"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/account1"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_margin="7.5dp"
+                android:src="@drawable/ic_account" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="익명" />
+                <TextView
+                    android:id="@+id/date0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023/12/04 13:36" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/content0"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="데이터 분석가는 조직이 더 나은 비지니스 의사결정을 할 수 있도록 데이터를 사용해 돕는 역할을 합니다. 수많은 데이터를 정리하고, 유용한 정보를 추출하고 데이터 분석에 기초하여 결정을 내려서 인사이트를 도출해 전달합니다."
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/content1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="댓글1"
-        android:inputType="none"
+        android:text="분석할 데이터와 분석 목적을 결정한 후 문제를 정의하고 필요한 데이터를 수집
+"
         android:layout_marginTop="30dp"
         android:layout_weight="1"/>
 
+        <TextView
+            android:id="@+id/date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2023/12/04 13:41" />
 
-    <EditText
-        android:id="@+id/edit2"
+    <TextView
+        android:id="@+id/content2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="댓글2"
-        android:inputType="none"
+        android:text="필요한 데이터를 수집하고, 이를 정리하여 데이터베이스나 스프레드시트 등에 저장
+"
         android:layout_marginTop="30dp"
         android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2023/12/04 13:43" />
 
-    <EditText
-        android:id="@+id/edit3"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="댓글3"
-        android:inputType="none"
-        android:layout_marginTop="30dp"
-        android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/content3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:text="데이터를 분석하기 쉽도록 전처리 작업을 수행 이 과정에서 데이터를 정제하거나 결측치를 처리하며, 데이터를 정규화하거나 스케일링하는 등의 작업을 수행
 
-    <EditText
-        android:id="@+id/edit4"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="댓글4"
-        android:inputType="none"
-        android:layout_marginTop="30dp"
-        android:layout_weight="1"/>
+" />
 
-    <EditText
-        android:id="@+id/edit5"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="댓글5"
-        android:inputType="none"
-        android:layout_marginTop="30dp"
-        android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/date3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2023/12/04 13:47" />
 
-        <EditText
-            android:id="@+id/edit6"
+        <TextView
+            android:id="@+id/content4"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="댓글6"
-            android:inputType="none"
+            android:text="전처리가 완료된 데이터를 분석하여, 인사이트를 도출 이를 위해 통계적 기법이나 머신러닝 알고리즘 등을 활용
+"
             android:layout_marginTop="30dp"
             android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/date4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2023/12/04 13:48"/>
 
-        <EditText
-            android:id="@+id/edit7"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="댓글7"
-            android:inputType="none"
-            android:layout_marginTop="30dp"
-            android:layout_weight="1"/>
-        <EditText
-            android:id="@+id/edit8"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="댓글8"
-            android:inputType="none"
-            android:layout_marginTop="30dp"
-            android:layout_weight="1"/>
     </LinearLayout>
 
 </ScrollView>
