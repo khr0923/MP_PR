@@ -1,13 +1,263 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="홈" />
+        android:orientation="vertical">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/account1"
+            android:src="@drawable/ic_account"
+            android:layout_margin="7.5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <TextView
+            android:text="익명"
+            android:id="@+id/profile1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-</FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content1"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="데이터 분석가는 조직이 더 나은 비지니스 의사결정을 할 수 있도록 데이터를 사용해 돕는 역할을 합니다. 수많은 데이터를 정리하고, 유용한 정보를 추출하고 데이터 분석에 기초하여 결정을 내려서 인사이트를 도출해 전달합니다."
+        android:layout_marginLeft="8dp"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp">
+        <ImageView
+            android:id="@+id/favorite1"
+            android:src="@drawable/ic_favorite_border"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <ImageView
+            android:id="@+id/comment1"
+            android:src="@drawable/ic_chat_black"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/favoritecounter1"
+        android:text="좋아요 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/account2"
+            android:src="@drawable/ic_account"
+            android:layout_margin="7.5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <TextView
+            android:text="익명"
+            android:id="@+id/profile2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content2"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="게임 개발자는 프로그래밍을 통해 맵 디자인, 캐릭터 디자인, 사운드, 각종 시스템 등을 뒤섞어, 게임이라는 하나의 결과물을 만드는 직업입니다."
+        android:layout_marginLeft="8dp"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp">
+        <ImageView
+            android:id="@+id/favorite2"
+            android:src="@drawable/ic_favorite_border"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <ImageView
+            android:id="@+id/comment2"
+            android:src="@drawable/ic_chat_black"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/favoritecounter2"
+        android:text="좋아요 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/account3"
+            android:src="@drawable/ic_account"
+            android:layout_margin="7.5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <TextView
+            android:text="익명"
+            android:id="@+id/profile3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content3"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="앱 개발자는 스마트폰이나 태블릿PC 등 모바일기기에서 사용되는 소프트웨어인 모바일 애플리케이션을 개발하고 수정하는 일을 합니다."
+        android:layout_marginLeft="8dp"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp">
+        <ImageView
+            android:id="@+id/favorite3"
+            android:src="@drawable/ic_favorite_border"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <ImageView
+            android:id="@+id/comment3"
+            android:src="@drawable/ic_chat_black"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/favoritecounter3"
+        android:text="좋아요 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/account4"
+            android:src="@drawable/ic_account"
+            android:layout_margin="7.5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <TextView
+            android:text="익명"
+            android:id="@+id/profile4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content4"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="프론트엔드 개발자는 사용자가 서비스를 이용하기 위해 웹페이지나 앱 내에서 만나고 경험하는 직업입니다."
+        android:layout_marginLeft="8dp"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp">
+        <ImageView
+            android:id="@+id/favorite4"
+            android:src="@drawable/ic_favorite_border"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <ImageView
+            android:id="@+id/comment4"
+            android:src="@drawable/ic_chat_black"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/favoritecounter4"
+        android:text="좋아요 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/account5"
+            android:src="@drawable/ic_account"
+            android:layout_margin="7.5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <TextView
+            android:text="익명"
+            android:id="@+id/profile5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content5"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="백엔드 개발은 웹 애플리케이션의 서버 측 구성 요소 생성을 의미합니다. 여기에는 데이터 저장, 처리 및 검색과 서버 측 비즈니스 논리를 처리하는 코드 작성이 포함됩니다."
+        android:layout_marginLeft="8dp"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp">
+        <ImageView
+            android:id="@+id/favorite5"
+            android:src="@drawable/ic_favorite_border"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <ImageView
+            android:id="@+id/comment5"
+            android:src="@drawable/ic_chat_black"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/favoritecounter5"
+        android:text="좋아요 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"/>
+
+ </LinearLayout>
+</ScrollView>
